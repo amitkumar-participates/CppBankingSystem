@@ -138,9 +138,9 @@ Per-user inbox. One file per user, created when user account is created.
 
 ---
 
-### 1.7 `SendedMailBox/<Username>SendedBox.txt`
+### 1.7 `SendedMailBox/<Username>SendedBox.txt` (sent-mail box)
 
-Per-user sent-mail box. Note: `Sended` is a naming error; should be `Sent`.
+Per-user sent-mail box. Note: the folder and filename use `Sended` — an incorrect conjugation in the source code. In all documentation below this is referred to as the **sent-mail box**.
 
 | # | Field name | C++ type | Notes |
 |---|---|---|---|
@@ -156,9 +156,9 @@ Per-user sent-mail box. Note: `Sended` is a naming error; should be `Sent`.
 ```
 users (MyUsers.txt)
   │  username  (logical PK)
-  ├──< login_events  (LoginRegister.txt)   via username
-  ├──< sent_mail     (SendedMailBox/)      via username
-  └──< received_mail (ReceivedMailBox/)    via username
+  ├──< login_events   (LoginRegister.txt)       via username
+  ├──< sent_mail      (SendedMailBox/)           via username  [folder named 'Sended' in source]
+  └──< received_mail  (ReceivedMailBox/)         via username
 
 clients (MyClients.txt)
   │  account_number  (logical PK)

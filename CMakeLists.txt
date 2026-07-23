@@ -38,7 +38,7 @@ list(APPEND BANKSYSTEM_INCLUDE_DIRS
     "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Login Register"
     "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Client"
     "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Transactions"
-    "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Transactions/Transcations Menu"
+    "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Transactions/Transcations Menu"  # NOTE: 'Transcations' is a typo in the original source tree; must match actual directory name
     "${CMAKE_SOURCE_DIR}/Screens/Main Menu/User"
     "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Communications"
     "${CMAKE_SOURCE_DIR}/Screens/Main Menu/Communications/Communication Menu"
